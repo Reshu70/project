@@ -1,0 +1,374 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* topbar */
+.topbar {
+  background-color:rgb(238,178,28);
+  padding: 10px 0;
+}
+.topbar .fa {
+  transition: all 0.3s;
+  display: inline-block;
+}
+.topbar .fa:hover {
+  transform: scale(1.2);
+}
+.topbar .right a {
+  display: flex;
+  align-items: center;
+}
+.topbar .right a .fa {
+  margin-left: 5px;
+}
+@media (max-width: 767.98px) {
+  .topbar .fa {
+      display: block;
+      margin: 5px 0;
+  }
+  .topbar .right {
+      margin-top: 10px;
+  }
+}
+.hidden-icon {
+  display: none !important;
+}
+
+
+/* nav */
+.navbar{
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+ background-color: rgb(255, 246, 241);
+ color:skyblue;
+}
+.navbar-nav{
+padding-left: 125px;
+color:skyblue;
+}
+.nav-link:hover {
+  color: rgb(238,178,28) !important;
+}
+/* logo */
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+/* Media query for screen width 280px or smaller */
+@media (max-width: 280px) {
+  .logo {
+      width: 40px; /* Adjust width as needed */
+      height: 40px; /* Adjust height as needed */
+  }
+}
+
+@media (max-width: 768px) {
+  .h{
+    font-size:40px;
+  }
+  
+}
+
+/*for part cards section css  */
+.y{
+  padding: 15px;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgb(238,178,28);
+  color:white;
+  border-color:rgb(238,178,28);
+  font-weight: bold;
+  text-align: center;
+  
+  }
+  .b{
+    padding: 15px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(28, 196, 238);
+    color:white;
+    border-color: rgb(28, 196, 238);
+    font-weight: bold;
+    text-align: center;
+  }
+
+  @media (max-width: 368px) {
+      .card-text{
+        font-size:10px;
+      }
+      
+    }
+    
+    .card-text{
+    font-size:20px;
+    }
+    
+    .card.border-shadow {
+      border: 2px solid rgb(250, 232, 187);
+      box-shadow: 8px 8px 8px rgb(252, 240, 210);
+      transition: background-color 0.3s ease;
+    }
+    
+    .card.border-shadow:hover {
+     
+      box-shadow: 8px 8px 8px rgb(16, 236, 252);
+     
+    }
+/* for center keliye use css */
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .card-body .pt-5 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+
+    /* add hover effect on slider */
+    .owl-carousel .item {
+      position: relative;
+    }
+    .owl-carousel .item img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .owl-carousel .item .img-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Adjust overlay color and opacity here */
+      opacity: 0; /* Hidden by default */
+      transition: opacity 0.3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .owl-carousel .item:hover .img-overlay {
+      opacity: 1; /* Show overlay on hover */
+    }
+    .owl-carousel .item .img-overlay p {
+      color: white; /* Overlay text color */
+      font-size: 1.5rem; /* Overlay text size */
+      text-align: center;
+    }
+    .owl-carousel .item:hover img {
+      opacity: 0.7; /* Optional: reduce image opacity on hover */
+    }
+    .owl-carousel .item:hover {
+      cursor: pointer; /* Change cursor to pointer on hover */
+    }
+
+    
+    /* slider 2 */
+.part5{
+  background-image: linear-gradient(rgba(86, 74, 105, 0.8), rgba(26, 28, 29, 0.8)), url('/img/bgimg.jpg');
+  background-repeat: none;
+}      
+
+/* slider 3 */
+.i{
+  border-radius: 10px;
+}
+
+/* part 2 */
+.section-2{
+  background-image: linear-gradient(rgba(86, 74, 105, 0.8), rgba(26, 28, 29, 0.8)), url('/img/bgimg.jpg');
+  background-repeat: none;
+  height: 800px;
+  width:100%;
+}
+/* footer */
+.f{
+  color:white;
+  text-align: center;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    img {
+      width: 90px;
+      height: 90px;
+    }
+  }
+  .f:hover {
+    color: rgb(238,178,28);
+    cursor: pointer;
+  }
+  /* part 1 css */
+  .imgbg{
+    background-image: linear-gradient(rgba(86, 74, 105, 0.8), rgba(26, 28, 29, 0.8)), url('/img/bgimg.jpg');
+    background-repeat: none;
+    height: 500px;
+    width:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+  
+  
+  }
+   /* part 1 css used in heading   */
+  .h{
+    font-size: 80px;
+  }
+  /* for section second heading size decrease  using media query */
+  @media (max-width: 768px) {
+    .h{
+      font-size:25px;
+    }
+    
+  }
+  
+  /* car */
+  /* .car{
+    background-color:white;
+    padding: 5px;
+    border-radius: 20px;
+  } */
+  /* slide effect */
+  .slide-in {
+    animation: slide-in 1s ease-out forwards;
+  }
+
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+ 
+  .riya{
+    background-image: linear-gradient(rgba(249, 253, 9, 0.8), rgba(242, 253, 82, 0.8)), url('/img/bgimg.jpg');
+    background-repeat: none;
+    height: 200px;
+    width:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+
+  .part3{
+    font-size: 20px;
+  }
+  /* part-4  */
+  .t{
+    color: white;
+  }
+  /* part 5 */
+
+  .part1{
+    font-size: 50px;
+  margin: 10px;
+  }
+
+  /* medie queary for sending msg */
+  .part1 {
+    font-size: 40px; /* Default font size */
+}
+
+@media (max-width: 327px) {
+    .part1 {
+        font-size: 16px; /* Smaller font size for small screens */
+    }
+}
+
+
+/* home section 2 css */
+
+.jannat{
+color:white;
+align-items: center;
+text-align: center;
+font-weight: bold;
+font-size: 20px;
+}
+
+
+.card-custom {
+background-color: rgb(238,178,28);
+border-radius: 25px;
+text-align: center;
+}
+.card-custom-2 {
+background-color: rgb(21,174,241);
+border-radius: 25px;
+text-align: center;
+}
+.jannat {
+font-family: Arial, sans-serif;
+}
+.btn-center {
+display: block;
+margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+.card-custom, .card-custom-2 {
+  display: none;
+}
+.card-custom:first-child {
+  display: block;
+}
+}
+
+/* margin top */
+.card-1{
+margin-top: 150px;
+}
+.card-2{
+margin-top: 100px;
+}
+/* btn */
+.sec{
+
+  padding: 15px;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color:white;
+  color:rgb(52 46 54);
+  border-color: rgb(28, 196, 238);
+  font-weight: bold;
+  text-align: center;
+  width: 60%;
+
+}
+.p{
+font-family: 'Montserrat';  
+word-spacing: 3px;
+font-weight: 800;
+font-size: 16px; 
+}
+/* car section */
+.car{
+margin-top: -500px;
+
+}
+.r{
+margin-top: -100px;
+z-index: 10;
+background-color: white;
+border-radius: 20px;
+border-color: rgb(28, 196, 238);
+text-align: center;
+padding: 10px;
+}
