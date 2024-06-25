@@ -205,10 +205,42 @@ color:skyblue;
       height: 90px;
     }
   }
-  .f:hover {
-    color: rgb(238,178,28);
-    cursor: pointer;
+
+  /* footer */
+  
+  footer {
+    font-family: Arial, sans-serif;
+    padding: 20px;
   }
+  
+  .hover-icon {
+    transition: color 0.3s ease;
+  }
+  
+  .hover-icon:hover {
+    color: rgb(238,178,28) !important;
+  }
+  
+  .service-list li {
+    transition: transform 0.3s ease, padding-left 0.3s ease;
+  }
+  
+  .service-list li:hover {
+    transform: translateX(5px);
+    padding-left: 5px;
+  }
+  
+  .service-list a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .service-list a:hover {
+    color: rgb(238,178,28) !important;
+  }
+  
+/* footer ends */
+
   /* part 1 css */
   .imgbg{
     background-image: linear-gradient(rgba(86, 74, 105, 0.8), rgba(26, 28, 29, 0.8)), url('/img/bgimg.jpg');
